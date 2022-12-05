@@ -15,7 +15,7 @@
 %endmacro
 
 section .data ; section for embedded constants
-helloworld: db 'hello world!', 10 ; `db` (data byte) to allocate some space, and fill it with a string "hello world!", 10 (line feed).
+helloworld: db 'hello world!', 13, 10 ; `db` (data byte) to allocate some space, and fill it with a string "hello world!", 10 (line feed).
 
 section .text ; section for code
 global _start
