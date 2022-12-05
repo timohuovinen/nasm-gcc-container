@@ -6,7 +6,7 @@
 ; 13: carriage return
 
 ; Macros:
-%macro write_string 1 
+%macro print 1 
   mov rax, 1
   mov rdi, 1
   mov rsi, %1
@@ -21,7 +21,7 @@ section .text ; section for code
 global _start
 
 _start:
-  write_string helloworld
+  print helloworld
 
   mov rax, 60
   xor rdi, rdi
