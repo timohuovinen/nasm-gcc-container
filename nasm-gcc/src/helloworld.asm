@@ -2,8 +2,8 @@
 ; guide: https://www.tutorialspoint.com/assembly_programming/assembly_quick_guide.htm
 ; doc: https://www.nasm.us/doc/
 ; doc: https://nasm.us/doc/nasmdoc3.html
-; 0xa/10: line feed
-; 13: carriage return
+; 10: \n
+; 13: \r
 
 ; Macros:
 %macro print 1 
