@@ -15,13 +15,13 @@
 %endmacro
 
 section .data ; section for embedded constants
-helloworld: db 'hello world!', 13, 10 ; `db` (data byte) to allocate some space, and fill it with a string "hello world!", 10 (line feed).
+hello_world: db 'hello world!', 13, 10 ; `db` (data byte) to allocate some space, and fill it with a string "hello world!", 10 (line feed).
 
 section .text ; section for code
 global _start
 
 _start:
-  print helloworld
+  print hello_world
 
   mov rax, 60
   xor rdi, rdi
