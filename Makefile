@@ -2,5 +2,5 @@ build:
 	docker compose build
 
 run: build
-	docker compose run nasm-gcc bash -c "make run"
+	docker compose run nasm-gcc
 
